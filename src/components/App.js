@@ -7,13 +7,13 @@ const App = () => {
   const [sum,setSum]=useState(0);
   let addRemoveHandler=(e)=>{
       let number=parseInt(e.target.value);
-      if(isNaN)
+      if(isNaN(number))
       {
         return;
       }
       let sign=number>=0?1:-1;
       let absoluteNumber=Math.abs(number);
-      let newSum=number+absoluteNumber*sign;
+      let newSum=sum+absoluteNumber*sign;
       setNumbers([...numbers,number])
       setSum(newSum);
 
